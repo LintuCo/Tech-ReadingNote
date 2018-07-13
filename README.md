@@ -4,7 +4,7 @@ IT读书笔记整理
 
 ## Java基础
 
-- [Java Concurrency in Practice](/java-concurrency-in-prectice/SUMMARY.md)
+- [Java Concurrency in Practice](/java-concurrency-in-practice/SUMMARY.md)
 
 
 
