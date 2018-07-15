@@ -1,8 +1,5 @@
 ## HDFS 组件 区别
 
-<i class="fas fa-spinner"></i>
-<i class="fas fa-align-left"></i>
-<i class=""></i>
 
 - NameNode: 
   - 管理文件系统命名空间并控制客户端对文件的访问。
