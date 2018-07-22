@@ -1,0 +1,20 @@
+@startuml
+interface Collection
+interface Set
+interface SortedSet
+interface NavigableSet
+abstract class AbstractSet
+class TreeSet
+class LinkedHashSet
+class HashSet
+class HashSet
+AbstractSet <|-- TreeSet
+NavigableSet <|-- TreeSet
+Set <|.. SortedSet
+Collection <|.. Set
+SortedSet <|.. NavigableSet
+Set <|.. LinkedHashSet
+HashSet <|.. LinkedHashSet
+AbstractSet <|-- HashSet
+Set <|.. HashSet
+@enduml

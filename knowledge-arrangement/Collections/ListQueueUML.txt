@@ -1,0 +1,74 @@
+@startuml
+interface Collection
+interface Queue
+interface List
+
+
+abstract class AbstractList
+
+class Stack
+
+
+class Vector
+
+List <|.. Vector
+AbstractList <|-- Vector
+
+
+Vector <|-- Stack
+
+Collection <|.. Queue
+Collection <|.. List
+
+
+class LinkedList
+interface Deque
+abstract class AbstractSequentialList
+AbstractSequentialList <|-- LinkedList
+List <|.. LinkedList
+Deque <|.. LinkedList
+
+
+
+Queue <|.. Deque
+
+class ArrayList
+List <|.. ArrayList
+AbstractList <|-- ArrayList
+
+abstract class AbstractCollection
+class ArrayDeque
+Deque <|.. ArrayDeque
+AbstractCollection <|-- ArrayDeque
+
+
+
+interface Iterable
+interface Collection
+interface BlockingQueue
+interface Queue
+interface BlockingQueue
+interface Deque
+interface BlockingDeque
+abstract class AbstractQueue
+abstract class AbstractCollection
+class ArrayBlockingQueue
+
+Iterable <|.. Collection
+Collection <|.. AbstractCollection
+Queue <|.. BlockingQueue
+Queue <|.. AbstractQueue
+AbstractCollection <|-- AbstractQueue
+BlockingQueue <|.. ArrayBlockingQueue
+AbstractQueue <|-- ArrayBlockingQueue
+BlockingQueue <|.. BlockingDeque
+Deque <|.. BlockingDeque
+
+class ConcurrentLinkedDeque
+Deque <|.. ConcurrentLinkedDeque
+AbstractCollection  <|-- ConcurrentLinkedDeque
+
+class ConcurrentLinkedQueue
+AbstractQueue <|-- ConcurrentLinkedQueue
+Queue <|.. ConcurrentLinkedQueue
+@enduml

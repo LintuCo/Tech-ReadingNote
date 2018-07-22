@@ -1,0 +1,34 @@
+@startuml
+class TreeMap
+interface Map
+interface SortedMap
+interface NavigableMap
+interface ConcurrentMap
+abstract class AbstractMap
+interface ConcurrentNavigableMap
+class ConcurrentHashMap
+class WeakHashMap
+Map <|.. WeakHashMap
+AbstractMap <|-- TreeMap
+AbstractMap <|-- WeakHashMap
+NavigableMap <|-- TreeMap
+Map <|.. SortedMap
+SortedMap <|.. NavigableMap
+class LinkedHashMap
+class HashMap
+Map <|.. LinkedHashMap
+HashMap <|.. LinkedHashMap
+
+class Dictionary
+class Hashtable
+Dictionary <|-- Hashtable
+Map <|.. Hashtable
+class HashMap
+AbstractMap <|-- HashMap
+Map <|.. HashMap
+Map <|.. ConcurrentMap
+AbstractMap <|-- ConcurrentHashMap
+ConcurrentMap <|.. ConcurrentHashMap
+ConcurrentMap <|.. ConcurrentNavigableMap
+NavigableMap <|.. ConcurrentNavigableMap
+@enduml
