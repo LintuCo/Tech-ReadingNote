@@ -1,10 +1,23 @@
 # program-problem-set
 
-- Spring
-    - @Autowired @Resource 以及 @Qualifier的区别
+- Java基础问题
 
 
-- Network
+- 底层原理（JVM、JMM、Java源码、并发等）
+    - Java源码
+        - AQS
+    - JVM
+        - 虚拟内存
+
+
+- 框架类问题（Spring、SpringMVC、Mybatis等）
+    - Spring
+        - @Autowired @Resource 以及 @Qualifier的区别
+
+- 算法问题
+
+- 基础课程（数据库、计算机网络、计算机组成原理、操作系统等）
+    - Network
 
 
 - Database
@@ -13,6 +26,7 @@
     - Mysql数据库引擎
     - 聚集索引和非聚集索引
     - SQL优化（未完成）
+    - Elastic Search
 
 
 - Data Structure

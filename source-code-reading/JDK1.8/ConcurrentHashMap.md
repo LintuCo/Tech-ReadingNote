@@ -11,6 +11,22 @@
 ![ConcurrentHashMap](http://p82ueiq23.bkt.clouddn.com/ConcurrentHashMap.jpg)
 </div>
 
+## 常量
+
+```java
+    //table的最大容量
+    private static final int MAXIMUM_CAPACITY = 1 << 30;
+    //table数量的最大值
+    private static final int DEFAULT_CAPACITY = 16;
+    //数组可能最大值，需要与toArray（）相关方法关联
+    static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
+    private static final float LOAD_FACTOR = 0.75f;
+    static final int TREEIFY_THRESHOLD = 8;
+    static final int UNTREEIFY_THRESHOLD = 6;
+    private static final int MAX_RESIZERS = (1 << (32 - RESIZE_STAMP_BITS)) - 1;
+    private static final int RESIZE_STAMP_SHIFT = 32 - RESIZE_STAMP_BITS;
+```
+
 ## HashEntry
 
 HashEntry用来封装具体的键值对，是个典型的四元组。与HashMap中的Entry类似，HashEntry也包括同样的四个域，分别是key、hash、value和next。不同的是，**在HashEntry类中，key，hash和next域都被声明为final的，value域被volatile所修饰，因此HashEntry对象几乎是不可变的，这是ConcurrentHashmap读操作并不需要加锁的一个重要原因**。

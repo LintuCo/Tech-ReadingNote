@@ -46,3 +46,4 @@ public class ReentrantReadWriteLock
 - `ReentrantReadWriteLock`为读写锁提供了可重入的加锁语义
 - `ReentrantReadWriteLock`在构造时可以选择非公平锁或者公平锁
 - 写线程可以降为读线程，读线程不能升级为写线程
+- 如果由读线程持有锁，而另一个线程请求写入锁，其他线程都不能获取读取锁

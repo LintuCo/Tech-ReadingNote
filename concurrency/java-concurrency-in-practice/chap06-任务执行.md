@@ -1,5 +1,14 @@
 # 任务执行
 
+## Executor框架
+
+```java
+public interface Executor{
+    void execute（Runnable command）
+}
+```
+Executor基于生产者消费者模式
+
 ## Executor的生命周期
 
 Executor扩展了ExecutorService接口，添加了一些生命周期管理的方法：
