@@ -6,6 +6,18 @@
 public class ReentrantLock implements Lock, java.io.Serializable
 ```
 
+```java
+public interface Lock {
+        void lock();
+        //在获得锁的同时保持对中断的响应
+        void lockInterruptibly() throws InterruptedException;
+        boolean tryLock();
+        boolean tryLock(long time, TimeUnit unit) throws InterruptedException;
+        void unlock();
+        Condition newCondition();
+}
+```
+
 **内置锁与外置锁的区别**
 - **内置锁的局限性** 无法中断一个正在等待获取锁的线程，无法在请求获取一个锁时无限等待下去。
 - **内置锁的优势** 内置锁必须在获取改锁的代码块中释放，简化编码工作。在线程转储中能给出在哪些调用帧中获得哪些锁，并能检测和识别发生死锁的线程。
@@ -14,7 +26,7 @@ public class ReentrantLock implements Lock, java.io.Serializable
 
 ### 轮询锁与定时锁
 
-*不免死锁的发生*
+*避免死锁的发生*
 
 **实现机制** 可定时的与可轮询的锁获取模式是由`tryLock`方法实现的。如果不能获取所有需要的锁，通过使用可定时或者可轮询的锁，从而重新获得控制权，释放已经获得的锁，然后重新尝试获取所有的锁（如果不能同时获取，则回退），如果在指定时间内不能获取所有需要的锁，则返回一个失败状态。
 

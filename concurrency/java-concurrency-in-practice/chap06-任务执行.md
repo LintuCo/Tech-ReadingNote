@@ -18,6 +18,14 @@ Executor扩展了ExecutorService接口，添加了一些生命周期管理的方
 
 ![Executor类图](http://p82ueiq23.bkt.clouddn.com/TOv1IaD138RtSuhGrIkLNi0YtRWJ5_PvW7GcQc0cWPbCdw2Un5Eu5hoDU0q7xHIqkWdX-_8dMHV3R3L5Dx95WjdvFVbgcZzUNj-VtsQEnIZVe2VevW-qeRnZJyvr0Al7vV9O7oVXmIrWfno0lWWDLrK4jv70QqeeONxgdlu_UOYNksf19ndQ_08.png)
 
+## 延迟任务与周期任务
+
+**Time类的缺陷**：在执行所有定时任务时只会创建一个线程，如果某个任务时间过长，或破坏其他定时的准确性；Timer线程无法捕获未检查的异常，将中止线程。
+
+**ScheduledThreadPoolExecutor**能够处理表现出错误行为的任务， DelayQueue中返回的对象将根据他们的延迟时间进行排序
+
+
+
 ## 找出可利用的并行性
 
 ### 携带结果的任务Callable与Future

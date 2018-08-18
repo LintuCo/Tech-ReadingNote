@@ -6,6 +6,8 @@
 - 底层原理（JVM、JMM、Java源码、并发等）
     - Java源码
         - AQS
+        - 线性安全：Vector、Stack
+        - 非线性安全：TreeSet、TreeMap
     - JVM
         - 虚拟内存
 
@@ -18,6 +20,11 @@
 
 - 基础课程（数据库、计算机网络、计算机组成原理、操作系统等）
     - Network
+        - HTTP1.0/1.1/2.0/HTTPS
+        - cookie/session
+        - TCP的三次握手、四次挥手
+        - 慢开始、快重传、超时重传、快恢复、慢恢复
+        - TCP和UDP的区别
 
 
 - Database
