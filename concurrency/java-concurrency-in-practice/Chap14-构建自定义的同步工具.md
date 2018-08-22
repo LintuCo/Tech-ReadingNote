@@ -89,3 +89,4 @@ AQS(AbstractQueuedSynchronizer)，AQS是JDK下提供的一套用于实现基于F
 ### ReentrantReadWriteLock
 
 `ReadWriteLock`接口表示存在两个锁：一个读取锁一个写入锁。基于AQS实现的`ReentrantReadWriteLock`，**单个AQS子类同时管理读取加锁和写入加锁**。分别使用了一个16位的状态来表示写入锁和读取锁的计数。写入锁为独占锁，读取锁为共享锁。
+

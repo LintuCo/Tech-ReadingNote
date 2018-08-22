@@ -25,6 +25,9 @@
 - 对象头
 - 对象内存布局，然后讲下对象的死亡过程
 - hashmap的扩容
+- 自动装箱与拆箱
+- hashCode和equals方法的关系
+
 
 ### JVM
 
@@ -81,12 +84,16 @@ spring中各种context有什么功能，他们之间有什么联系
 - HTTP头
 - GET和POST区别
 - http和https的区别
+- get提交是否有字节限制，如果有是在哪限制的
+- HTTP报文内容
 - 超时重传机制
 - token相关
 - 三次握手、四次握手
 - token相关，加salt相关，最后得出结论加盐之后也最好不要用md5算法
 - SSL套接层
 - session和cookie区别
+- redirect与forward区别
+
 
 ### 操作系统
 

@@ -1,6 +1,388 @@
-作者：天禾裕
-链接：https://www.nowcoder.com/discuss/76933?type=2&order=3&pos=18&page=1
-来源：牛客网
+线程的状态转换
+
+如何停止一个线程
+
+Synchronized如何使用
+
+synchronized和Lock的区别
+
+多线程如何进行信息交互
+
+sleep和wait的区别(考察的方向是是否会释放锁)
+
+多线程与死锁
+
+如何才能产生死锁
+
+什么叫守护线程，用什么方法实现守护线程
+
+Java线程池技术及原理
+
+java并发包concurrent及常用的类
+
+volatile关键字
+
+Java中的NIO，BIO，AIO分别是什么
+
+IO和NIO区别
+
+序列化与反序列化
+
+常见的序列化协议有哪些
+
+内存溢出和内存泄漏的区别
+
+Java内存模型及各个区域的OOM，如何重现OOM
+
+出现OOM如何解决
+
+用什么工具可以查出内存泄漏
+
+Java内存管理及回收算法
+
+Java类加载器及如何加载类(双亲委派)
+
+xml解析方式
+
+Statement和PreparedStatement之间的区别
+
+JavaEE:
+
+servlet生命周期及各个方法
+
+servlet中如何自定义filter
+
+JSP原理
+
+JSP和Servlet的区别
+
+JSP的动态include和静态include
+
+Struts中请求处理过程
+
+MVC概念
+
+Spring mvc与Struts区别
+
+Hibernate/Ibatis两者的区别
+
+Hibernate一级和二级缓存
+
+Hibernate实现集群部署
+
+Hibernate如何实现声明式事务
+
+简述Hibernate常见优化策略
+
+Spring bean的加载过程(推荐看Spring的源码)
+
+Spring如何实现AOP和IOC
+
+Spring bean注入方式
+
+Spring的事务管理(推荐看Spring的源码)
+
+Spring事务的传播特性
+
+springmvc原理
+
+springmvc用过哪些注解
+
+Restful有几种请求
+
+Restful好处
+
+Tomcat，Apache，JBoss的区别
+
+memcached和redis的区别
+
+有没有遇到中文乱码问题，如何解决的
+
+如何理解分布式锁
+
+你知道的开源协议有哪些
+
+json和xml区别
+
+设计模式：
+
+设计模式的六大原则
+
+常用的设计模式
+
+用一个设计模式写一段代码或画出一个设计模式的UML
+
+如何理解MVC
+
+高内聚，低耦合方面的理解
+
+算法：
+
+深度优先、广度优先算法
+
+排序算法及对应的时间复杂度和空间复杂度
+
+写一个排序算法
+
+查找算法
+
+B+树和二叉树查找时间复杂度
+
+KMP算法、hash算法
+
+常用的hash算法有哪些
+
+如何判断一个单链表是否有环？
+
+给你一万个数，如何找出里面所有重复的数？用所有你能想到的方法，时间复杂度和空间复杂度分别是多少？
+
+给你一个数组，如何里面找到和为K的两个数？
+
+100000个数找出最小或最大的10个？
+
+一堆数字里面继续去重，要怎么处理？
+
+Linux:
+
+linux常用命令
+
+如何查看内存使用情况
+
+Linux下如何进行进程调度
+
+操作系统：
+
+操作系统什么情况下会死锁
+
+产生死锁的必要条件
+
+死锁预防
+
+数据库：
+
+范式
+
+数据库事务隔离级别
+
+数据库连接池的原理
+
+乐观锁和悲观锁
+
+如何实现不同数据库的数据查询分页
+
+SQL注入的原理，如何预防
+
+数据库索引的实现(B+树介绍、和B树、R树区别)
+
+SQL性能优化
+
+数据库索引的优缺点以及什么时候数据库索引失效
+
+Redis的存储结构
+
+
+安全：
+
+如果客户端不断的发送请求连接会怎样
+
+DDos攻击
+
+DDos预防
+
+那怎么知道连接是恶意的呢？可能是正常连接
+
+
+J2SE基础
+
+1. 九种基本数据类型的大小，以及他们的封装类。
+
+2. Switch能否用string做参数？
+
+3. equals与==的区别。
+
+4. Object有哪些公用方法？
+
+5. Java的四种引用，强弱软虚，用到的场景。
+
+6. Hashcode的作用。
+
+7. ArrayList、LinkedList、Vector的区别。
+
+8. String、StringBuffer与StringBuilder的区别。
+
+9. Map、Set、List、Queue、Stack的特点与用法。
+
+10. HashMap和HashTable的区别。
+
+11. HashMap和ConcurrentHashMap的区别，HashMap的底层源码。
+
+12. TreeMap、HashMap、LindedHashMap的区别。
+
+13. Collection包结构，与Collections的区别。
+
+14. try catch finally，try里有return，finally还执行么？
+
+15. Excption与Error包结构。OOM你遇到过哪些情况，SOF你遇到过哪些情况。
+
+16. Java面向对象的三个特征与含义。
+
+17. Override和Overload的含义去区别。
+
+18. Interface与abstract类的区别。
+
+19. Static class 与non static class的区别。
+
+20. java多态的实现原理。
+
+21. 实现多线程的两种方法：Thread与Runable。
+
+22. 线程同步的方法：sychronized、lock、reentrantLock等。
+
+23. 锁的等级：方法锁、对象锁、类锁。
+
+24. 写出生产者消费者模式。
+
+25. ThreadLocal的设计理念与作用。
+
+26. ThreadPool用法与优势。
+
+27. Concurrent包里的其他东西：ArrayBlockingQueue、CountDownLatch等等。
+
+28. wait()和sleep()的区别。
+
+29. foreach与正常for循环效率对比。
+
+30. Java IO与NIO。
+
+31. 反射的作用于原理。
+
+32. 泛型常用特点，List<String>能否转为List<Object>。
+
+33. 解析XML的几种方式的原理与特点：DOM、SAX、PULL。
+
+34. Java与C++对比。
+
+35. Java1.7与1.8新特性。
+
+36. 设计模式：单例、工厂、适配器、责任链、观察者等等。
+
+37. JNI的使用。
+
+Java里有很多很杂的东西，有时候需要你阅读源码，大多数可能书里面讲的不是太清楚，需要你在网上寻找答案。
+
+推荐书籍：《java核心技术卷I》《Thinking in java》《java并发编程》《effictive java》《大话设计模式》
+
+
+JVM
+
+1. 内存模型以及分区，需要详细到每个区放什么。
+
+2. 堆里面的分区：Eden，survival from to，老年代，各自的特点。
+
+3. 对象创建方法，对象的内存分配，对象的访问定位。
+
+4. GC的两种判定方法：引用计数与引用链。
+
+5. GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方，如果让你优化收集方法，有什么思路？
+
+6. GC收集器有哪些？CMS收集器与G1收集器的特点。
+
+7. Minor GC与Full GC分别在什么时候发生？
+
+8. 几种常用的内存调试工具：jmap、jstack、jconsole。
+
+9. 类加载的五个过程：加载、验证、准备、解析、初始化。
+
+10. 双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader。
+
+11. 分派：静态分派与动态分派。
+
+JVM过去过来就问了这么些问题，没怎么变，内存模型和GC算法这块问得比较多，可以在网上多找几篇博客来看看。
+
+推荐书籍：《深入理解java虚拟机》
+
+
+操作系统
+
+1. 进程和线程的区别。
+
+2. 死锁的必要条件，怎么处理死锁。
+
+3. Window内存管理方式：段存储，页存储，段页存储。
+
+4. 进程的几种状态。
+
+5. IPC几种通信方式。
+
+6. 什么是虚拟内存。
+
+7. 虚拟地址、逻辑地址、线性地址、物理地址的区别。
+
+因为是做android的这一块问得比较少一点，还有可能上我简历上没有写操作系统的原因。
+
+推荐书籍：《深入理解现代操作系统》
+
+
+TCP/IP
+
+1. OSI与TCP/IP各层的结构与功能，都有哪些协议。
+
+2. TCP与UDP的区别。
+
+3. TCP报文结构。
+
+4. TCP的三次握手与四次挥手过程，各个状态名称与含义，TIMEWAIT的作用。
+
+5. TCP拥塞控制。
+
+6. TCP滑动窗口与回退N针协议。
+
+7. Http的报文结构。
+
+8. Http的状态码含义。
+
+9. Http request的几种类型。
+
+10. Http1.1和Http1.0的区别
+
+11. Http怎么处理长连接。
+
+12. Cookie与Session的作用于原理。
+
+13. 电脑上访问一个网页，整个过程是怎么样的：DNS、HTTP、TCP、OSPF、IP、ARP。
+
+14. Ping的整个过程。ICMP报文是什么。
+
+15. C/S模式下使用socket通信，几个关键函数。
+
+16. IP地址分类。
+
+17. 路由器与交换机区别。
+
+网络其实大体分为两块，一个TCP协议，一个HTTP协议，只要把这两块以及相关协议搞清楚，一般问题不大。
+
+推荐书籍：《TCP/IP协议族》
+
+
+1. 各种排序：冒泡、选择、插入、希尔、归并、快排、堆排、桶排、基数的原理、平均时间复杂度、最坏时间复杂度、空间复杂度、是否稳定。
+
+2. 对冒泡与快排的改进。
+
+3. 二分查找，与变种二分查找。
+
+4.  二叉树、B+树、AVL树、红黑树、哈夫曼树。
+
+5.  二叉树的前中后续遍历：递归与非递归写法，层序遍历算法。
+
+6.  图的BFS与DFS算法，最小生成树prim算法与最短路径Dijkstra算法。
+
+7.  KMP算法。
+
+8.  排列组合问题。
+
+9.  动态规划、贪心算法、分治算法。（一般不会问到）
+
+10. 大数据处理：类似10亿条数据找出最大的1000个数.........等等
 
 一、Java
 Java的优势
